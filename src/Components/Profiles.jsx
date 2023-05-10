@@ -54,9 +54,10 @@ const profiles = [                  // create an array of objects that store dat
 const Profiles = () => {                                                      // create a functional component called Profiles
     return (
         <div className='d-flex flex-row flex-wrap justify-content-center'>    {/* create a div element with classnames that display the profiles in a row, wrap them, and center them */}
-            {profiles.map((profile) => (
-                <Profile key = {profile.name} {...profile}>                   {/* render the Profile component and pass it data from the profiles array using spread operator */}
-                    <img src = {profile.image} alt='gambar' />
+                                                                              {/* use map function to iterate over each profile and render a Profile component for each */}
+            {profiles.map((profile) => (                                      
+                <Profile key = {profile.name} {...profile}>                   {/* set key prop to profile.name and pass all the profile information as props to Profile component;  render the Profile component and pass it data from the profiles array using spread operator */}
+                    <img src = {profile.image} alt='gambar' />                {/* render the image for each profile */}
                 </Profile>
             ))}
         </div>
