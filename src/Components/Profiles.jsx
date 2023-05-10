@@ -1,6 +1,6 @@
-import Profile from './Profile';
+import Profile from './Profile';    // import the Profile component
 
-const profiles = [
+const profiles = [                  // create an array of objects that store data for each profile
     {
         fullName: 'Ujang Kusuma Wijaya Sembrani',
         profession: 'CEO Kusuma Jaya Tech',
@@ -51,11 +51,11 @@ const profiles = [
     },
 ];
 
-const Profiles = () => {
+const Profiles = () => {                                                      // create a functional component called Profiles
     return (
-        <div className='d-flex flex-row flex-wrap justify-content-center'>
+        <div className='d-flex flex-row flex-wrap justify-content-center'>    {/* create a div element with classnames that display the profiles in a row, wrap them, and center them */}
             {profiles.map((profile) => (
-                <Profile key = {profile.name} {...profile}>
+                <Profile key = {profile.name} {...profile}>                   {/* render the Profile component and pass it data from the profiles array using spread operator */}
                     <img src = {profile.image} alt='gambar' />
                 </Profile>
             ))}
@@ -63,4 +63,4 @@ const Profiles = () => {
     )
 }
 
-export default Profiles;
+export default Profiles;                                                      // This exports the Profiles component so it can be imported and used in other files
