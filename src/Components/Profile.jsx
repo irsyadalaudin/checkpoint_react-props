@@ -16,4 +16,4 @@ const Profile = ( {fullName, bio, profession, children} ) => {
     );
 };
 
-export default Profile;                      // This exports the Profile component so it can be imported and used in other files
+export default Profile                       // This exports the Profile component so it can be imported and used in other files

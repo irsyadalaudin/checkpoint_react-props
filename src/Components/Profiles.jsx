@@ -1,4 +1,4 @@
-import Profile from './Profile';    // import the Profile component
+import Profile from './Profile'     // import the Profile component
 
 const profiles = [                  // create an array of objects that store data for each profile
     {
@@ -64,4 +64,4 @@ const Profiles = () => {                                                      //
     )
 }
 
-export default Profiles;                                                      // This exports the Profiles component so it can be imported and used in other files
+export default Profiles                                                       // This exports the Profiles component so it can be imported and used in other files
