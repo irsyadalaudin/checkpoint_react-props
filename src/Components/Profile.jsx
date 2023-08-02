@@ -1,4 +1,5 @@
 // This is a functional component named Profile that takes in destructured props (fullName, bio, profession, children)
+/* eslint-disable react/prop-types */
 const Profile = ( {fullName, bio, profession, children} ) => {
     return (
 
